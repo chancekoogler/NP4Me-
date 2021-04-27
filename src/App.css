@@ -1,38 +1,211 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+
+#formLabel {
+  color: white;
+  
+}
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 22px;
+  margin-top: 10px;
+  border-radius: 8px;
+  color: white;
+  font-family: 'Architects Daughter';
+  text-decoration: underline;
+}
+
+select {
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 10px;
+  border: 2px solid gainsboro;
+  color: white;
+  font-family: 'Architects Daughter';
+}
+
+select, #formLabel {
+  font-size: 20px;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-image: url("background-image3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  overflow-x: scroll;
+}
+
+
+.master-container {
+  display: flex;
+  padding-top: 30px;
+  overflow-x: scroll;
+  
+}
+
+.flex-container {
+  height: 550px;
+  width: 550px;
+}
+.flex-container::-webkit-scrollbar {
+  display: none;
+}
+
+.flex-container > .images {
+  position: relative;
+  height: 550px;
+  width: 550px;
+  border-radius: 50%;
+  transition: 1s;
+  margin-right: 50px;
+  
+}
+
+.image-desc {
+  position: relative;
+  text-align: center;
+  width: 75%;
+  top: -450px;
+  left: 70px;
+  color: white;
+  visibility: hidden;
+  font-size: 18px;
+
+  
+}
+
+.flex-container:hover .image-desc {
+  visibility: visible;
+  opacity: 1;
+}
+.flex-container:hover > img {
+   -webkit-filter: blur(5px);
+   filter: blur(5px);
+   opacity: 0.5;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#np4me-header {
   color: white;
+  font-size: 45px;
+  font-family: 'Architects Daughter', cursive;
+  top: -10px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.nav-and-form {
+  position: absolute;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: white;
+  font-family: 'Architects Daughter', cursive;
+  top: 140px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+#formLabel {
+  padding-right: 5px;
+}
+
+.userSection {
+  position: relative;
+  width: 85px;
+  height: auto;
+  left: 1275px;
+  top: 75px;
+  color:white;
+  font-size: 15px;
+
+}
+
+.newUserForm {
+  width: 33%;
+  border-radius: 5px;
+  background-color: #b6b6b68f;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+ 
+}
+
+.loginInput {
+  width: 100%;
+  padding: 8px 12px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+input[type=submit] {
+  background-color: rgba(178, 145, 231, 0.937)
+}
+
+#redirectLink {
+  color: white;
+  text-decoration: none;
+}
+
+.navigationBar {
+  position: relative;
+  bottom: 55px;
+}
+
+.resultName {
+  color: white;
+  font-size: 20px;
+}
+
+.master-container {
+  display: flex;
+  padding-top: 30px;
+  overflow-x: scroll;
+  
+}
+
+.flex-container {
+  height: 550px;
+  width: 550px;
+}
+.flex-container::-webkit-scrollbar {
+  display: none;
+}
+
+.flex-container > .images {
+  position: relative;
+  height: 550px;
+  width: 550px;
+  border-radius: 50%;
+  transition: 1s;
+  margin-right: 50px;
+  
+}
+
+#bucketlistTitle {
+  color: white;
+  position: absolute;
+  top: 130px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Architects Daughter';
+  font-size: 28px;
+
+
 }
